@@ -17,13 +17,44 @@ def withdraw(balance,amount):
     else :
         balance -= amount
         return balance
-while True :
+def menu():
+    balance = 10000
+
+def show(balance):
+
+    print("Your balance is : ",balance)
+
+def deposit(balance,amount):
+
+    balance+=amount
+    return balance
+
+def withdraw(balance,amount):
+
+    if amount>balance:
+        print("Not anough money!!")
+        return balance
+    else :
+        balance -= amount
+        return balance
+def menu():
     print ("\n--- Welcome To The ATM!!! ---")
     print("1) Show balance")
     print("2) Deposit money")
     print("3) Withdraw money")
     print("4) Exit")
     choice=int(input("Enter your choice : "))
+
+
+while True :
+
+    # print ("\n--- Welcome To The ATM!!! ---")
+    # print("1) Show balance")
+    # print("2) Deposit money")
+    # print("3) Withdraw money")
+    # print("4) Exit")
+    # choice=int(input("Enter your choice : "))
+    menu()
     if choice==1:
         show(balance)
     elif choice==2:
