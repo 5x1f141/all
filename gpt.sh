@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# 🔐 Sudo yetkisi al
+
 sudo -v || { echo "Sudo başarısız oldu."; exit 1; }
 
-# 📂 Log dizini
 mkdir -p ~/system_logs
 logfile="~/system_logs/syslog_$(date +%F_%T).txt"
 
-# 🧠 Bilgi Toplama
+
 {
     echo "=== Sistem Bilgisi ==="
     fastfetch || neofetch
@@ -31,4 +30,4 @@ logfile="~/system_logs/syslog_$(date +%F_%T).txt"
     who
 } > "$logfile"
 
-echo "📦 Log dosyası kaydedildi: $logfile"
+echo "Log dosyası kaydedildi: $logfile"
