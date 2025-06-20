@@ -1,11 +1,21 @@
-def say_hi():
-    print("Hi there!!")
-say_hi()
-def greet(name):
-    print("Hi",name)
-greet("Enes")
+liste=[]
+while True:
+    urun=input("Bir urun giriniz (Çıkmak icin 'q' ) : " )
+    if urun == "q":
+        break
+    liste.append(urun)
+    break
 
-def multiply(x,y):
-    return x*y
-result= multiply(7,9)
-print("Result is :",result)
+print("Ürünler : ",liste)
+
+dosya=open("ornek.txt","w")
+giris=input(f"Bir urun giriniz (Çıkmak icin 'q') ")
+dosya.write(giris)
+dosya.close()
+
+dosya = open("ornek.txt","r" )
+icerik= dosya.read()
+print(icerik)
+dosya.close()
+
+
