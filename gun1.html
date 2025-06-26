@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My First HTML Page!</title>
+    <style>
+    form{
+      background-color: cornflowerblue;
+      width: 300px;
+      height: 80vh;
+      box-shadow: 5px 5px 10px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center; 
+      border-radius: 50px;
+
+    }
+    .gonder{
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px black;
+      height: 30px;
+      width: 100px;
+
+    }
+    .gonder:hover{
+      transform: scale(1.1);
+      box-shadow: 7px 7px 10px black;
+
+    }
+    .soyad{
+      border-radius: 10px;
+      box-shadow: 5px 5px 7px black;
+      width: 100px;
+      height: 20px;
+    }
+    .soyad:hover{
+      transform: scale(1.1);
+      box-shadow: 7px 7px 13px black;
+    }
+
+    .isim{
+      box-shadow: 5px 5px 10px black;
+      border-radius: 10px;
+      width: 100px;
+      height: 20px;
+    }
+
+    .isim:hover{
+      transform: scale(1.1);
+      box-shadow: 7px 7px 13px black;
+    
+      
+    }
+
+    img{
+      width: 120px;
+      height: 120px;
+      box-shadow: 10px 10px 15px black;
+      border-radius: 20px;
+    }
+
+    img:hover{
+      transform: scale(1.1);
+      box-shadow: 15px 15px 20px black;
+      
+    }
+
+    h2{
+      width: 50px;
+      color: white;
+      
+    }
+
+    .email{
+      box-shadow: 5px 5px 10px black;
+      border-radius: 10px;
+      width: 140px;
+      height: 20px;
+    }
+    .email:hover{
+      transform: scale(1.1);
+      box-shadow: 3px 3px 8px black;
+    }
+    h1{
+      height: 30px;
+      color: white;
+
+    }
+    h1:hover{
+      transform: scale(1.1);
+      transition: all 0.4s ease-in-out;
+    }
+    .soyad,.gonder,.isim,.email, img {
+      transition: all 0.3s ease-in-out;
+    }
+     
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="bilgi">
+        <h1>FORM</h1>
+        <label for="isim">Name : 
+        </label><br>
+        <input class="isim" id="isim" type="text" required><br><br>
+        <label for="soyad">
+          Surname : </label><br>
+        <input class="soyad" id="soyad" type="text" required><br><br>
+          <div>
+            <h2>Thats Me !!</h2>
+            <img src="https://i.pinimg.com/736x/21/87/e1/2187e11abd6d749bd2c7c8ef29fae2cd.jpg">
+            <img src="https://i.pinimg.com/736x/55/dc/b2/55dcb27be63808e593c245238aa9666a.jpg">
+          </div>
+        <label for="email"><br>
+          <p>e-mail <strong>(required) : </strong>  </p>
+          <input type="email" id="email" class="email" placeholder="....@gmail.com" required>
+        </label>
+                  
+
+        <br><br>
+        <input class="gonder" type="submit" value="Done!">
+      </div>
+    </form>
+  </body>
+</html>
