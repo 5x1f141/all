@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Cards</title>
+
+    <style>
+    .kart{
+      width: 500px;
+      height: 500px;
+      color: mediumblue;
+      background-color: blanchedalmond;
+      margin: 10px auto;
+      padding: 10px;
+      box-shadow: 10px 10px 15px black;
+      border-radius: 30px;
+      position: relative;
+      margin-top: 200px;
+
+    }
+    .kart:hover{
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 20px 20px 30px black;
+    }
+    .kart img{
+      height: 200px;
+      width: 200px;
+      box-shadow: 10px 10px 15px black;
+      border-radius: 30px;
+      margin-left: 20px;
+    }
+    .kart img:hover{
+      transform: scale(1.1);
+      transition: all 0.4s ease-in-out;
+      box-shadow: 15px 15px 20px black;
+    }
+    .kart h2{
+      color: black;
+      margin-left: 20px;
+    }
+    .kart p {
+      color:black;
+      margin-left: 20px;
+      
+    }
+    body{
+      background: linear-gradient(to bottom, #ffe4e1, #ffc0cb);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    </style>
+    
+  </head>
+
+  <body>
+    <form>
+      <div class="kart">
+        <h2>Thats Me !!</h2>
+        <img src="https://i.pinimg.com/736x/b1/50/fc/b150fcd5e5298a813dd77a89b1030350.jpg">
+      </div>
+    </form>
+
+  </body>
+
+</html>
